@@ -1,0 +1,10 @@
+langchain-community
+langchain
+fastapi[all]
+llama-index-llms-mistralai
+llama-index-embeddings-mistralai
+fastapi
+uvicorn
+pydantic
+pyngrok
+nest-asyncio
