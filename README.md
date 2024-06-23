@@ -23,6 +23,8 @@ The system design uses RAG approach and mistral api to generate compelling marke
   The main objective of this step is to load the property details data from csv file for converting and storing as a vector for RAG approach.
   This function checks if a pickle file exists for cached data. If it does, it loads the data from the pickle file; otherwise, it loads the data from the CSV file     
   and processes it, saves it as a pickle file, and returns the loaded data.
+
+  For property detail data Zillow api have been used
   
 > # Step 2: Generating prompt:
   Function constructs a marketing pitch prompt using a template and variable mappings, substituting placeholders with actual property details and the target audience.
