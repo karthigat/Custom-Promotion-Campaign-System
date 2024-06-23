@@ -3,6 +3,9 @@
 This project is designed to generate promotional content for real estate properties based on property details and targeted audience information.
 The system design uses RAG approach and mistral api to generate compelling marketing pitches.
 
+Public URL link to get the response:
+  Link: "https://fe44-2401-4900-1cd1-bfa6-3816-9305-5d68-a928.ngrok-free.app/property"
+  
 # File Structure:
 
   ├── src\
