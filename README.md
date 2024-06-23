@@ -39,7 +39,7 @@ The system design uses RAG approach and mistral api to generate compelling marke
   Ngrok: Ngrok allows us to create a secured tunnel from a public URL to your local machine, providing a way to expose servers to the internet. 
   The public URL that is generated through Ngrok is defined and called in request_promotion.py using requests which will get the response from the llm.
 
-# Instructions for running the file:
+# Instructions for running the project:
 > Step 1: Navigate to 'scr' in the project folder. Run the command 'uvicorn main:app'.
 
 > Step 2: Install the Ngrok for Windows. Create an authentication api key fron Ngrok. Authenticate with Ngrok key in the terminal in your local machine. Run the command 'ngrok http port_number'
