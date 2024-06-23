@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 import nest_asyncio
 from Custom_promotion.custom_promotion import get_promotion
+from Custom_promotion.load_csv_file import load_csv
 
 app = FastAPI()
 
@@ -44,7 +45,7 @@ def hello_world():
 
 @app.post('/property')
 def prop_detail(input_parameters: model_input):
-    
+    print(type(input_parameters))
     input_data = input_parameters.json()
     input_dictionary = json.loads(input_data)
     
@@ -54,10 +55,11 @@ def prop_detail(input_parameters: model_input):
                         "Description": input_dictionary['Description']}
     targeted_audience = input_dictionary['TargetedAudience']
 
-  
+    
     promotion = get_promotion(property_details, targeted_audience)
     
-    return {"test":test_test, "test1":test1_test}
+    return promotion
+
 
 # ngrok_tunnel = ngrok.connect(8000)
 # print('Public URL:', ngrok_tunnel.public_url)
