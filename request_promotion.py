@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "https://f667-2401-4900-1cd1-bfa6-3816-9305-5d68-a928.ngrok-free.app/property/"
+url = "https://fe44-2401-4900-1cd1-bfa6-3816-9305-5d68-a928.ngrok-free.app/property"
 
 input_property_details = {
                     "Name": "Urban Oasis Lofts",
@@ -16,9 +16,7 @@ input_property_details = {
 
 input_json = json.dumps(input_property_details)
 
+# Send a POST request to the specified URL with the JSON data
 response = requests.post(url, data=input_json)
-
-# response = requests.get(url)
-
 
 print(response.text)
